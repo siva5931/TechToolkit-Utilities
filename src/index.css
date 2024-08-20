@@ -1,0 +1,1010 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+/* :root {
+  --color-background: #fffdf9;
+  --color-text: #201515;
+  --color-tools: #E9F6FF;
+  --color-theme: #ff4f00;
+  --color-gray: #EFECEC;
+} */
+
+:root {
+  --color-background: #314455;
+  --color-text: #F6F5F5;
+  --color-tools: #5A5560;
+  --color-theme: #9E5A63;
+  --color-gray: #1F2833;
+  --color-button: #65B741;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  color: #33333b;
+  font-size: 18px;
+}
+
+/* Scrollbar  */
+
+
+::-webkit-scrollbar {
+  width: 8px; /* Width*/
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-theme); /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-gray); /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-text); /* Color of the scrollbar thumb on hover */
+}
+
+
+/* Navbar CSS File */
+
+.navbar {
+  background-color: var(--color-background);
+  padding: 1% 5%;
+}
+
+.navbar-brand {
+  
+  font-size: 1.7rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, rgba(46,161,255,1) 0%, rgba(88,225,252,1) 50%, rgba(63,153,255,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  cursor: pointer;
+  color: transparent!important; 
+}
+
+/* General link styles */
+.nav-link, .dropdown-item, .quick-links h6 a {
+  color: var(--color-text);    /* Default text color */
+  font-weight: 500;            /* Default font weight */
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem;       
+}
+
+/* Hover and focus states */
+.nav-link:hover, .dropdown-item:hover, .nav-link:focus, .quick-links h6 a:hover {
+  color: var(--color-theme)!important; /* Blue text color on hover/focus */
+  font-weight: 500;
+  text-decoration: underline;  /* Underline on hover/focus */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  border: none;
+  margin: 2% 0%;
+  border: 1px solid var(--color-theme);
+  font-size: 1.4rem;
+}
+
+
+.nav-link.show{
+  color: var(--color-theme)!important;
+}
+.nav-item{
+  padding-right: 23px;
+}
+
+/* Tagline File CSS */
+
+/* Tagline File CSS */
+
+.taglinediv {
+  padding-bottom: 200px;
+  background-color: var(--color-background);
+  padding: 8% 0%;
+  color: var(--color-text);
+  padding-bottom: 11%;
+}
+
+.taglineh1 {
+  z-index: 99;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.taglineh1 .line {
+  display: block;
+  text-align: center;
+  font-size: 4rem; /* Adjust font size as needed */
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.taglineh1 .line span {
+  display: inline-block;
+  /* No animations applied */
+}
+
+.taglineh4,
+.checkpoints {
+  opacity: 1; /* Removed fade-in effect */
+  transition: none; /* Removed transition effect */
+}
+
+.taglineh4 {
+  margin: 2% 0%;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.checkpoints {
+  font-size: 1.2rem;
+}
+
+.bgeffect {
+  height: 180px;
+  width: 180px;
+  background-color: #0099ff;
+  border-radius: 50%;
+  filter: blur(180px);
+  animation: blurAnimation 4s ease-in-out infinite;
+}
+
+@keyframes blurAnimation {
+  0% {
+    filter: blur(180px);
+  }
+  50% {
+    filter: blur(150px);
+  }
+  100% {
+    filter: blur(190px);
+  }
+}
+
+/* Additional CSS for preserving spaces */
+
+.taglineh1 .line span.space {
+  display: inline-block;
+  width: 0.2em; /* Adjust width as needed for spacing */
+}
+
+
+/*tools div*/ 
+
+.toolsdiv {
+  background-color: var(--color-gray);
+  padding: 2.5% 2.5%;
+  color: var(--color-text);
+}
+
+.tools-btn {
+  font-weight: 600;
+  color: #33333b;
+  text-decoration: underline 2px;
+}
+
+.row {
+  margin-top: 2.5%;
+}
+
+.toolsdiv h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.tools-card {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  border: none;
+  margin: 2% 0%;
+  border: 1px solid var(--color-theme) !important;
+  padding: 0.9% 1%;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #6C4B5F;
+  border-color: #6C4B5F;
+}
+
+.btn-primary:hover {
+  background-color: #9E5A63; /* Brighter version of #6C4B5F */
+  border-color: 9E5A63;
+}
+
+
+/* Image Compressor CSS */
+
+.img-comp {
+  padding: 6% 6%;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.img-comp .text-center {
+  margin-bottom: 2rem; /* Space between header and description */
+}
+
+.img-comp .card-head {
+  font-size: 2rem; /* Font size for the "Image Compressor" header */
+  margin-bottom: 1rem; /* Space below the header */
+}
+
+.img-comp .text-center h5.mb-4 {
+  font-size: 1rem; /* Font size for the description text */
+  line-height: 1.5; /* Line height for better readability */
+  margin-bottom: 2rem; /* Space below the description text */
+}
+
+.img-comp .form-label {
+  font-size: 1.25rem; /* Font size for labels */
+  margin-bottom: 0.5rem; /* Space below the label */
+}
+
+.img-comp .form-control {
+  font-size: 1rem; /* Font size for input fields */
+  border-radius: 4px; /* Rounded corners for input fields */
+  margin-bottom: 1rem; /* Space below the input field */
+  height: 2.5rem; /* Reduced height for input fields */
+}
+
+.img-comp .download-btn {
+  display: inline-block; /* Make the button inline-block for proper spacing */
+  font-size: 1rem; /* Font size for buttons */
+  padding: 0.75rem 1.5rem; /* Padding inside buttons */
+  border: 2px solid #9E5A63; /* Border color for the button */
+  border-radius: 4px; /* Rounded corners for button */
+  background-color: #9E5A63; /* Background color for the button */
+  color: #F6F5F5; /* Text color for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for background and border colors */
+  height: 3rem; /* Consistent height for buttons */
+  line-height: 1.5rem; /* Align text vertically */
+  text-decoration: none; /* Remove underline from links */
+  margin-bottom: 1rem; /* Space below the button */
+}
+
+.img-comp .download-btn:hover {
+  background-color: #8E4C5A; /* Slightly darker color for hover effect */
+  border-color: #8E4C5A; /* Border color for hover effect */
+}
+
+.img-comp .download-btn:disabled {
+  background-color: #6C4B5F; /* Disabled button background color */
+  color: #F6F5F5; /* Disabled button text color */
+  cursor: not-allowed; /* Cursor for disabled state */
+  border-color: #6C4B5F; /* Disabled button border color */
+}
+
+.img-comp .comp-img {
+  max-width: 100%; /* Ensure images do not exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Rounded corners for images */
+}
+
+.img-comp .mt-3 {
+  margin-top: 2rem; /* Space above the compressed image section */
+}
+
+
+/* qr generator */
+.qrcode {
+  padding: 6% 6%;
+  background-color: var(--color-gray);
+  color: var(--color-text);
+}
+
+.qrcodehead {
+  padding-bottom: 2%;
+}
+
+.qrcode .text-center h5 {
+  font-size: 1.5rem; /* Font size for the header in the QR code generator section */
+  margin-bottom: 1rem; /* Space below the header */
+}
+
+.qrcode .text-center h5:last-of-type {
+  font-size: 1rem; /* Font size for the description text */
+  line-height: 1.5; /* Line height for better readability */
+  margin-bottom: 2rem; /* Space below the description text */
+}
+
+.qrcode .form-control {
+  font-size: 1rem; /* Font size for the input fields */
+  border-radius: 4px; /* Rounded corners for input fields */
+  margin-bottom: 1rem; /* Space below input fields */
+  height: 2.5rem; /* Reduced height for input fields */
+}
+
+.qrcode .download-btn {
+  font-size: 1rem; /* Font size for buttons */
+  padding: 0.5rem 1.5rem; /* Padding inside buttons */
+  border: 2px solid var(--color-primary); /* Border for the button */
+  border-radius: 4px; /* Rounded corners for button */
+  background-color: var(--color-background); /* Background color for the button */
+  color: var(--color-primary); /* Text color for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for background and border colors */
+  height: 3rem; /* Consistent height for buttons */
+  line-height: 1.5rem; /* Align text vertically */
+}
+
+.qrcode .download-btn:hover {
+  background-color: var(--color-primary); /* Change background color on hover */
+  color: #9E5A63; /* Change text color on hover */
+  border-color: var(--color-primary-dark); /* Darker border color on hover */
+}
+
+.qrcode .download-btn:disabled {
+  background-color: #9E5A63; /* Disabled button background color */
+  color: #F6F5F5; /* Disabled button text color */
+  cursor: not-allowed; /* Cursor for disabled state */
+  border-color: #9E5A63; /* Disabled button border color */
+}
+
+.qrcode img {
+  max-width: 100%; /* Make sure the image is responsive */
+  height: auto; /* Keep aspect ratio */
+  border-radius: 10px; /* Rounded corners for the image */
+  margin-top: 1rem; /* Space above the image */
+}
+
+
+textarea, input {
+  width: 70%;
+}
+
+.divone {
+  padding-bottom: 5%;
+}
+
+.footer {
+  padding: 3% 4%;
+  background-color: #191919;
+  color: var(--color-text);
+  font-size: 0.9rem; /* Reduced overall font size for a more compact look */
+}
+
+.footer .quick-links {
+  font-size: 0.1rem; /* Smaller size specifically for Quick Links */
+}
+
+.footer .footer-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .footer-logo {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.footer .social-icons a {
+  margin-right: 0.5rem;
+}
+
+.footer .social-icons a i {
+  font-size: 1.2rem;
+}
+
+.footer .footer-bottom {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  border-top: 1px solid #333;
+  margin-top: 1rem;
+}
+
+
+/* Text Utility CSS */
+
+.textutilcomp {
+  padding: 6% 6%;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.textutilcomp .text-center {
+  margin-bottom: 2rem; /* Space between header and description */
+}
+
+.textutilcomp .card-head {
+  font-size: 2.2rem; /* Font size for the "TextUtility Tools" header */
+  margin-bottom: 1rem; /* Space below the header */
+}
+
+.textutilcomp .text-center h5.mb-4 {
+  font-size: 1.5rem; /* Font size for the description text */
+  line-height: 1.5; /* Line height for better readability */
+  margin-bottom: 2rem; /* Space below the description text */
+}
+
+.textutilcomp h4 {
+  font-size: 1.25rem; /* Font size for subsections */
+  margin-top: 1.5rem; /* Space above the subsections */
+}
+
+.textutilcomp .form-floating {
+  margin-bottom: 1.5rem; /* Space below the textarea */
+}
+
+.textutilcomp .form-floating .form-control {
+  font-size: 1rem; /* Font size for the textarea */
+  border-radius: 4px; /* Rounded corners for the textarea */
+  height: auto; /* Auto height for the textarea */
+}
+
+.textutilcomp .textutilbtns {
+  margin-top: 1.5rem; /* Space above the buttons */
+}
+
+.textutilcomp .textutilbtns .download-btn {
+  display: inline-block; /* Make buttons inline-block for proper spacing */
+  font-size: 1rem; /* Font size for buttons */
+  padding: 0.75rem 1.5rem; /* Padding inside buttons */
+  border: 2px solid #9E5A63; /* Border color for buttons */
+  border-radius: 4px; /* Rounded corners for buttons */
+  background-color: #9E5A63; /* Background color for buttons */
+  color: #F6F5F5; /* Text color for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for background and border colors */
+  margin-right: 0.5rem; /* Space between buttons */
+  margin-bottom: 0.5rem; /* Space below buttons */
+  height: 3rem; /* Consistent height for buttons */
+  line-height: 1.5rem; /* Align text vertically */
+}
+
+.textutilcomp .textutilbtns .download-btn:hover {
+  background-color: #8E4C5A; /* Slightly darker color for hover effect */
+  border-color: #8E4C5A; /* Border color for hover effect */
+}
+
+.textutilcomp .textutilbtns .download-btn:disabled {
+  background-color: #6C4B5F; /* Disabled button background color */
+  color: #F6F5F5; /* Disabled button text color */
+  cursor: not-allowed; /* Cursor for disabled state */
+  border-color: #6C4B5F; /* Disabled button border color */
+}
+
+.textutilcomp p {
+  margin-bottom: 0.5rem; /* Space between paragraphs */
+  font-size: 1rem; /* Font size for text summary */
+}
+
+
+/* Text Extractor CSS */
+
+.textextcomp {
+  padding: 6% 6%;
+  background-color: var(--color-gray);
+  color: var(--color-text);
+}
+
+.textextcomp .text-center {
+  margin-bottom: 2rem; /* Space between header and description */
+}
+
+.textextcomp .card-head {
+  font-size: 2rem; /* Font size for the "Image Text Extractor" header */
+  margin-bottom: 1rem; /* Space below the header */
+}
+
+.textextcomp .text-center h5.mb-4 {
+  font-size: 1.25rem; /* Font size for the description text */
+  line-height: 1.5; /* Line height for better readability */
+  margin-bottom: 2rem; /* Space below the description text */
+}
+
+.textextcomp .form-control {
+  font-size: 1rem; /* Font size for the input field */
+  border-radius: 4px; /* Rounded corners for input fields */
+  margin-bottom: 1rem; /* Space below the input field */
+  height: 2.5rem; /* Reduced height for the input field */
+}
+
+.textextcomp .download-btn {
+  font-size: 1rem; /* Font size for buttons */
+  padding: 0.75rem 1.5rem; /* Padding inside buttons */
+  border: 2px solid var(--color-primary); /* Border for the button */
+  border-radius: 4px; /* Rounded corners for button */
+  background-color: var(--color-background); /* Background color for the button */
+  color: var(--color-primary); /* Text color for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for background and border colors */
+  height: 3rem; /* Consistent height for buttons */
+  line-height: 1.5rem; /* Align text vertically */
+}
+
+.textextcomp .download-btn:hover {
+  background-color: #9E5A63; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+  border-color: var(--color-primary-dark); /* Darker border color on hover */
+}
+
+.textextcomp .download-btn:disabled {
+  background-color: #9E5A63; /* Disabled button background color */
+  color: #F6F5F5; /* Disabled button text color */
+  cursor: not-allowed; /* Cursor for disabled state */
+  border-color: #9E5A63; /* Disabled button border color */
+}
+
+.textextcomp .mt-4 {
+  margin-top: 2rem; /* Space above the extracted text section */
+}
+
+.textextcomp p {
+  font-size: 1rem; /* Font size for the extracted text */
+  white-space: pre-wrap; /* Preserve whitespace in the extracted text */
+}
+
+/* Password Generator CSS */
+
+.passcomp {
+  padding: 6% 6%;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.passcomp .text-center {
+  margin-bottom: 2rem; /* Space between header and description */
+}
+
+.passcomp .card-head {
+  font-size: 2rem; /* Font size for the "Password Generator" header */
+  margin-bottom: 1rem; /* Space below the header */
+}
+
+.passcomp .text-center h5.mb-4 {
+  font-size: 1rem; /* Font size for the description text */
+  line-height: 1.5; /* Line height for better readability */
+  margin-bottom: 2rem; /* Space below the description text */
+}
+
+.passcomp .form-label {
+  font-size: 1.25rem; /* Font size for labels */
+  margin-bottom: 0.5rem; /* Space below the label */
+}
+
+.passcomp .form-control {
+  font-size: 1rem; /* Font size for input fields */
+  border-radius: 4px; /* Rounded corners for input fields */
+  margin-bottom: 1rem; /* Space below the input field */
+  height: 2.5rem; /* Reduced height for input fields */
+}
+
+.passcomp .form-check {
+  margin-bottom: 1rem; /* Space between checkboxes */
+}
+
+.passcomp .form-check-input {
+  margin-right: 0.5rem; /* Space between checkbox and label */
+}
+
+.passcomp .download-btn {
+  font-size: 1rem; /* Font size for buttons */
+  padding: 0.5rem 1.5rem; /* Padding inside buttons */
+  border: 2px solid #9E5A63; /* Border color for the button */
+  border-radius: 4px; /* Rounded corners for button */
+  background-color: #9E5A63; /* Background color for the button */
+  color: #F6F5F5; /* Text color for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for background and border colors */
+  height: 3rem; /* Consistent height for buttons */
+  line-height: 1.5rem; /* Align text vertically */
+}
+
+.passcomp .download-btn:hover {
+  background-color: #8E4C5A; /* Slightly darker color for hover effect */
+  border-color: #8E4C5A; /* Border color for hover effect */
+}
+
+.passcomp .download-btn:disabled {
+  background-color: #6C4B5F; /* Disabled button background color */
+  color: #F6F5F5; /* Disabled button text color */
+  cursor: not-allowed; /* Cursor for disabled state */
+  border-color: #6C4B5F; /* Disabled button border color */
+}
+
+.passcomp .mt-3 {
+  margin-top: 2rem; /* Space above the generated password section */
+}
+
+.passcomp .mt-2 {
+  margin-top: 1rem; /* Space between the password field and the Copy Password button */
+}
+
+/* Youtube Thumbnail Downloader */
+
+/* YouTube Thumbnail Downloader Component */
+.ytcomp {
+  padding: 2% 20%; /* Adjusted padding for better spacing */
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.ytcomp .text-center {
+  margin-bottom: 1rem; /* Space between the text center section and input group */
+}
+
+.ytcomp .card-head {
+  font-size: 1.5rem; /* Font size for the "YouTube Thumbnail Downloader" header */
+  margin-bottom: 1rem; /* Space below the header */
+}
+
+.ytcomp .text-center h5.mb-4 {
+  font-size: 1rem; /* Font size for the description text */
+  line-height: 2; /* Line height for better readability */
+  margin-bottom: 2rem; /* Space below the description text */
+}
+
+.ytcomp .input-group {
+  margin-bottom: 2rem; /* Space between input group and thumbnail section */
+  display: flex; /* Flexbox layout for proper alignment */
+  align-items: center; /* Center align items vertically */
+}
+
+.ytcomp .form-control {
+  font-size: 1rem; /* Font size for the input field */
+  flex: 1; /* Allow input to take available space */
+  border-radius: 4px; /* Rounded corners for input field */
+  height: 3.5rem; /* Set a consistent height */
+}
+
+.ytcomp .download-btn {
+  font-size: 1rem; /* Font size for buttons */
+  padding: 0.75rem 1.5rem; /* Padding inside buttons */
+  margin-left: 0.5rem; /* Space between input and button */
+  border: 2px solid var(--color-primary); /* Border for the button */
+  border-radius: 4px; /* Rounded corners for button */
+  background-color: var(--color-background); /* Background color for the button */
+  color: var(--color-primary); /* Text color for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for background and border colors */
+  height: 3.5rem; /* Set a consistent height */
+  line-height: 1.5rem; /* Align text vertically */
+}
+
+.ytcomp .download-btn:hover {
+  background-color: var(--color-primary); /* Change background color on hover */
+  color: #9E5A63; /* Change text color on hover */
+  border-color: var(--color-primary-dark); /* Darker border color on hover */
+}
+
+.ytcomp .download-btn:disabled {
+  background-color: #9E5A63; /* Disabled button background color */
+  color: #F6F5F5; /* Disabled button text color */
+  cursor: not-allowed; /* Cursor for disabled state */
+  border-color: #9E5A63; /* Disabled button border color */
+}
+
+.ytcomp img {
+  max-width: 100%; /* Make sure the image is responsive */
+  height: auto; /* Keep aspect ratio */
+  border-radius: 10px; /* Rounded corners for the image */
+  margin-top: 1rem; /* Space above the image */
+}
+
+/* Image Converter Component */
+.imageconvertorcomp {
+  padding: 2% 20%; /* Adjusted padding for better spacing */
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.imageconvertorcomp .text-center {
+  margin-bottom: 1rem; /* Space between the text center section and upload area */
+}
+
+.imageconvertorcomp .card-head {
+  font-size: 1.5rem; /* Font size for the "Image Converter" header */
+  margin-bottom: 1rem; /* Space below the header */
+}
+
+.imageconvertorcomp .text-center h5.mb-4 {
+  font-size: 1rem; /* Font size for the description text */
+  line-height: 2; /* Line height for better readability */
+  margin-bottom: 2rem; /* Space below the description text */
+}
+
+.imageconvertorcomp .input-group {
+  margin-bottom: 2rem; /* Space between input group and drop area */
+}
+
+.imageconvertorcomp .form-control {
+  font-size: 1rem; /* Font size for the file input */
+}
+
+.imageconvertorcomp .image-drop-area {
+  border: 2px dashed var(--color-text); /* Dashed border for the drop area */
+  padding: 2rem; /* Padding inside the drop area */
+  background-color: var(--color-background-light); /* Background color for the drop area */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Center align text inside the drop area */
+}
+
+.imageconvertorcomp .image-preview {
+  max-width: 100%; /* Make sure the image is responsive */
+  height: auto; /* Keep aspect ratio */
+  border-radius: 8px; /* Rounded corners for the image */
+  margin-top: 1rem; /* Space above the image */
+}
+
+.imageconvertorcomp .download-btn {
+  font-size: 1rem; /* Font size for buttons */
+  padding: 0.75rem 1.5rem; /* Padding inside buttons */
+  margin-top: 1rem; /* Space above the button */
+  border: 2px solid var(--color-primary); /* Border for the button */
+  border-radius: 4px; /* Rounded corners */
+  background-color: var(--color-background); /* Background color for the button */
+  color: var(--color-primary); /* Text color for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for background and border colors */
+}
+
+.imageconvertorcomp .download-btn:hover {
+  background-color: var(--color-primary); /* Change background color on hover */
+  color: #9E5A63; /* Change text color on hover */
+  border-color: var(--color-primary-dark); /* Darker border color on hover */
+}
+
+.imageconvertorcomp .download-btn:disabled {
+  background-color: #9E5A63; /* Disabled button background color */
+  color: #F6F5F5; /* Disabled button text color */
+  cursor: not-allowed; /* Cursor for disabled state */
+  border-color: #9E5A63; /* Disabled button border color */
+}
+
+
+/* URL Component */
+
+/* URL Shortener Component */
+.urlcomp {
+  padding: 2% 20%; /* Adjusted padding for better spacing */
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.urlcomp .text-center {
+  margin-bottom: 1rem; /* Space between the text center section and input area */
+}
+
+.urlcomp .card-head {
+  font-size: 1.5rem; /* Font size for the "URL Shortener" header */
+  margin-bottom: 1rem; /* Space below the header */
+}
+
+.urlcomp .text-center h5.mb-4 {
+  font-size: 1rem; /* Font size for the description text */
+  line-height: 2; /* Line height for better readability */
+  margin-bottom: 2rem; /* Space below the description text */
+}
+
+.urlcomp .input-container {
+  margin-bottom: 2rem; /* Space between input group and result area */
+}
+
+.urlcomp .input-group {
+  margin-bottom: 1rem; /* Space below the input group */
+  display: flex; /* Flexbox layout for proper alignment */
+  align-items: center; /* Center align items vertically */
+}
+
+.urlcomp .form-control {
+  font-size: 1rem; /* Font size for the URL input */
+  flex: 1; /* Allow input to take available space */
+}
+
+.urlcomp .download-btn {
+  font-size: 1rem; /* Font size for buttons */
+  padding: 0.5rem 1.5rem; /* Padding inside buttons */
+  margin-left: 0.5rem; /* Space between input and button */
+  border: 2px solid var(--color-primary); /* Border for the button */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #9E5A63; /* Background color for the button */
+  color: var(--color-primary); /* Text color for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for background and border colors */
+}
+
+.urlcomp .download-btn:hover {
+  background-color: var(--color-primary); /* Change background color on hover */
+  color: #9E5A63; /* Change text color on hover */
+  border-color: var(--color-primary-dark); /* Darker border color on hover */
+}
+
+.urlcomp .download-btn:disabled {
+  background-color: #9E5A63; /* Disabled button background color */
+  color: #F6F5F5; /* Disabled button text color */
+  cursor: not-allowed; /* Cursor for disabled state */
+  border-color: #9E5A63; /* Disabled button border color */
+}
+
+.urlcomp .result-container {
+  margin-top: 1rem; /* Space above the result container */
+  text-align: center; /* Center align text in the result container */
+}
+
+.urlcomp .result-label {
+  font-size: 1.2rem; /* Font size for the result label */
+}
+
+.urlcomp .shortened-url {
+  color: var(--color-primary); /* Color for the shortened URL link */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.urlcomp .shortened-url:hover {
+  text-decoration: underline; /* Underline the link on hover */
+  font-size: 0.5rem;
+}
+
+.urlcomp .error-message {
+  color: var(--color-error); /* Color for the error message */
+  font-size: 1rem; /* Font size for error messages */
+  text-align: center; /* Center align the error message */
+  margin-top: 1rem; /* Space above the error message */
+}
+
+
+/* PDF Compressor Component */
+.pdfcomp {
+  padding: 2% 20%; /* Adjusted padding for better spacing */
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.pdfcomp .text-center {
+  margin-bottom: 1rem; /* Space between the text center section and drop zone */
+}
+
+.pdfcomp .card-head {
+  font-size: 1.5rem; /* Font size for the "PDF Compressor" header */
+  margin-bottom: 1rem; /* Space below the header */
+}
+
+.pdfcomp .text-center h5.mb-4 {
+  font-size: 1rem; /* Font size for the description text */
+  line-height: 2; /* Line height for better readability */
+  margin-bottom: 2rem; /* Space below the description text */
+}
+
+.pdfcomp .file-dropzone {
+  border: 2px dashed var(--color-text); /* Dashed border for the dropzone */
+  padding: 2rem; /* Padding inside the dropzone */
+  margin-bottom: 2rem; /* Space between dropzone and buttons */
+  background-color: var(--color-background-light); /* Background color for the dropzone */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Center align text inside the dropzone */
+}
+
+.pdfcomp .form-control {
+  font-size: 1rem; /* Font size for the file input */
+}
+
+.pdfcomp .button-section {
+  text-align: center; /* Center align the buttons */
+}
+
+.pdfcomp .download-btn {
+  font-size: 1rem; /* Font size for buttons */
+  padding: 0.75rem 1.5rem; /* Padding inside buttons */
+  margin: 0.5rem; /* Space between buttons */
+  border: 2px solid var(--color-primary); /* Border for the button */
+  border-radius: 4px; /* Rounded corners */
+  background-color: var(--color-background); /* Background color for the button */
+  color: var(--color-primary); /* Text color for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for background and border colors */
+}
+
+.pdfcomp .download-btn:hover {
+  background-color: var(--color-primary); /* Change background color on hover */
+  color: #9E5A63; /* Change text color on hover */
+  border-color: var(--color-primary-dark); /* Darker border color on hover */
+}
+
+.pdfcomp .download-btn:disabled {
+  background-color: #9E5A63; /* Disabled button background color */
+  color: #F6F5F5; /* Disabled button text color */
+  cursor: not-allowed; /* Cursor for disabled state */
+  border-color: #9E5A63; /* Disabled button border color */
+}
+
+
+/* Contributers Component */
+
+.contributerscomp {
+  padding: 6% 6%;
+  background-color: var(--color-gray);
+  color: var(--color-text);
+  font-size: 1.2rem;
+}
+
+.contributer-card {
+  border: none;
+  padding: 2% 3%;
+  margin: 2% 1%;
+
+  background-color: var(--color-gray);
+  color: var(--color-text);
+  font-size: 1.1rem;
+}
+
+.contributer-img {
+  /* border: 4px solid var(--color-theme); */
+  width: 90%;
+  background-color: var(--color-background);
+  animation: floating-avatar 2s infinite ease-in-out;
+}
+
+.card-head-contributer {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+@keyframes floating-avatar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.link-btn {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-text);
+  color: var(--color-text);
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+}
+
+.link-btn:hover {
+  color: var(--color-theme);
+  border: 1px solid var(--color-theme);
+}
+
+
+/* Font sizes */
+.card-head-contributer {
+  font-size: 2.5rem; /* Increase font size */
+  font-weight: 600;
+}
+
+.mb-4 {
+  font-size: 2.5rem; /* Increase font size */
+}
+
+.form-label {
+  font-size: 2rem; /* Increase font size for labels */
+}
+
+.form-control {
+  font-size: 2.3rem; /* Increase font size for input fields */
+  color: rgb(157, 150, 150);
+}
+
+.download-btn {
+  font-size: 2.3rem; /* Increase font size for the button */
+}
+
